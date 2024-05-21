@@ -87,6 +87,7 @@ public class UploadGame extends HttpServlet {
         g1.setPrice(Float.valueOf(request.getParameter("price")));
         
         try {
+        	
             GameModels.doSave(g1);
         } catch (SQLException e) {
             e.printStackTrace();
